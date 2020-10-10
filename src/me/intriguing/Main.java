@@ -29,6 +29,8 @@ public class Main {
 
     }
 
+
+    // Print a customer list (uses generics - type of list should be or extends Customer).
     public static void printCustomerList(List<? extends Customer> customerList) {
         for (Customer customer : customerList) {
             System.out.print(customer.getName() + " ");
