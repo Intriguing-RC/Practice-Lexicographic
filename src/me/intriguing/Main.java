@@ -29,7 +29,7 @@ public class Main {
 
     }
 
-    public static void printCustomerList(List<Customer> customerList) {
+    public static void printCustomerList(List<? extends Customer> customerList) {
         for (Customer customer : customerList) {
             System.out.print(customer.getName() + " ");
         }
