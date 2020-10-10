@@ -18,19 +18,14 @@ public class Main {
         customerList.add(new Customer("Tom"));
         customerList.add(new Customer("Olly"));
 
+
+        // Randomly shuffle the list and print the modified list
         Collections.shuffle(customerList);
         printCustomerList(customerList);
 
-        // OUTPUT:
-        // (shuffled)
-        // Tom Olly Nick Kenny Riley Bill Donald
-
+        // Sort the collections based on Customer#compareTo method and print the modified list.
         Collections.sort(customerList);
         printCustomerList(customerList);
-
-        // OUTPUT:
-        // (in order)
-        // Bill Donald Kenny Nick Olly Riley Tom
 
     }
 
